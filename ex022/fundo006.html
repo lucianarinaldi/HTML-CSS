@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
@@ -13,13 +13,20 @@
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+
+            /* Regra de Shorthand para "background": color - image - position - repeat - size - attachment. Então ficaria:
+             background: black; url('imagens/wallpaper002.jpg') center top no-repeat cover fixed; 
+             Obs.: Mas quando eu coloco isso, a imagem de fundo não funciona. Só funciona se eu tirar o "cover" (background-size).
+             Daí eu coloco o background-size embaixo do shorthand de background. */
 
 
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -34,6 +41,9 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, assumenda voluptate magnam iste tempore rerum temporibus accusantium, voluptas repellat aspernatur atque tenetur commodi accusamus. Neque magnam voluptate iste inventore cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab quo dolore? Reprehenderit, recusandae, aperiam tempora nisi magnam, reiciendis cumque repellat quos saepe vitae dolor pariatur autem tempore vel. Maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, adipisci quidem? Enim quasi quae sit similique earum excepturi ducimus veniam atque id deleniti eveniet vel, culpa, quibusdam doloremque blanditiis qui.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, assumenda voluptate magnam iste tempore rerum temporibus accusantium, voluptas repellat aspernatur atque tenetur commodi accusamus. Neque magnam voluptate iste inventore cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab quo dolore? Reprehenderit, recusandae, aperiam tempora nisi magnam, reiciendis cumque repellat quos saepe vitae dolor pariatur autem tempore vel. Maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, adipisci quidem? Enim quasi quae sit similique earum excepturi ducimus veniam atque id deleniti eveniet vel, culpa, quibusdam doloremque blanditiis qui.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, assumenda voluptate magnam iste tempore rerum temporibus accusantium, voluptas repellat aspernatur atque tenetur commodi accusamus. Neque magnam voluptate iste inventore cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab quo dolore? Reprehenderit, recusandae, aperiam tempora nisi magnam, reiciendis cumque repellat quos saepe vitae dolor pariatur autem tempore vel. Maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, adipisci quidem? Enim quasi quae sit similique earum excepturi ducimus veniam atque id deleniti eveniet vel, culpa, quibusdam doloremque blanditiis qui.</p>
+       
     </main>
     
 </body>
